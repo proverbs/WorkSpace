@@ -1,0 +1,2 @@
+proverbs male 14348146 998 18826073401 xuhao1996 science 0 nulluni1 nullmaj11 nullmaj12 nullmaj13 1 nulluni2 nullmaj21 nullmaj22 nullmaj23 1 nulluni3 nullmaj31 nullmaj32 nullmaj33 1 
+yxy female 14348147 998 18826073401 xuhao1996 science 0 nulluni1 nullmaj11 nullmaj12 nullmaj13 1 nulluni2 nullmaj21 nullmaj22 nullmaj23 1 nulluni3 nullmaj31 nullmaj32 nullmaj33 1 
