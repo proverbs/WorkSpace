@@ -89,10 +89,11 @@ void AdmitSystem::save() {
 		for (int j = 0; j < 3; j++) {
 			output << studentDate[i].getVolition(j).getIdOfUniversity() << " ";
 			for (int k = 0; k < Volition::NUMBER_OF_MAJOR; k++) {
-				output << studentDate[i].getVolition(j).getIdOfMajor(k + 1) << " ";
+				output << studentDate[i].getVolition(j).getIdOfMajor(k) << " ";
 			}
 			output << studentDate[i].getVolition(j).getAdjustable() << " ";
 		}
+		output << endl;
 	}
 }
 
