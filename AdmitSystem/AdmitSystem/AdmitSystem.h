@@ -20,7 +20,7 @@ private:
 AdmitSystem::AdmitSystem() {
     cout << "Please input the filename you want to load." << endl;
     cin >> filename;
-    input.open(filename);
+    input.open(filename.c_str());
     init();
     input.close();
     login();
@@ -76,7 +76,7 @@ void AdmitSystem::init() {
 }
 
 void AdmitSystem::save() {
-    ofstream output(filename);
+    ofstream output(filename.c_str());
 	for (int i = 1; i < (int)studentDate.size(); i++) {
 		output << studentDate[i].getName() << " ";
 		output << studentDate[i].getGender() << " ";
