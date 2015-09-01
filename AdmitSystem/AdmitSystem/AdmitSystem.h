@@ -77,7 +77,7 @@ void AdmitSystem::init() {
 
 void AdmitSystem::save() {
     ofstream output(filename.c_str());
-	for (int i = 1; i < (int)studentDate.size(); i++) {
+	for (int i = 0; i < (int)studentDate.size(); i++) {
 		output << studentDate[i].getName() << " ";
 		output << studentDate[i].getGender() << " ";
 		output << studentDate[i].getNumber() << " ";
