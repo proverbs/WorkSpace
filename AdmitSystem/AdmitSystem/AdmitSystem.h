@@ -18,9 +18,16 @@ private:
 };
 
 AdmitSystem::AdmitSystem() {
-    cout << "Please input the filename you want to load." << endl;
-    cin >> filename;
-    input.open(filename.c_str());
+	while (true) {
+		cout << "Please input the filename you want to load." << endl;
+		cin >> filename;
+		input.open(filename.c_str());
+		if (input.fail()) {
+			cout << "Failed to open the file." << endl;
+		}
+		else break;
+	}
+	cout << "Success." << endl;
     init();
     input.close();
     login();
