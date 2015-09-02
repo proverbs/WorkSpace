@@ -19,7 +19,7 @@ private:
     bool adjustable;
 };
 
-//const int Volition::NUMBER_OF_MAJOR = 3;类中静态常量的定义？？？？
+//const int Volition::NUMBER_OF_MAJOR = 3;绫讳腑闈欐�佸父閲忕殑瀹氫箟锛燂紵锛燂紵
 
 string Volition::getIdOfUniversity() const {
 	return idOfUniversity;
@@ -61,5 +61,21 @@ void Volition::modify() {
 	for (int i = 0; i < NUMBER_OF_MAJOR; i++) {
 		cout << "Please input major " << i + 1 << "." << endl;
 		cin >> idOfMajor[i];
+	}
+	int opt;
+	while (true) {
+	   cout << "Adjustable?" << endl;
+	   cout << "1. Yes." << endl;
+	   cout << "2. No." << endl;
+	   cin >> opt;
+	   if (opt == 1) {
+	      adjustable = 1;
+          break; 
+	   }
+	   else if (opt == 2) {
+	       adjustable = 0;
+           break;
+	   }
+	   else cout << "Input incorrect." << endl;
 	}
 }
