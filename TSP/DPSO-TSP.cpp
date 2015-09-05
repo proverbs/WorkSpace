@@ -41,7 +41,7 @@ inline void read() {//读入
     //读入坐标并对坐标四舍五入 
     for (int i = 1; i <= n; i++)
         for (int j = 1; j <= n; j++) {
-            dis[i][j] = (int)sqrt((sx[i] - sx[j]) * (sx[i] - sx[j]) + (sy[i] - sy[j]) * (sy[i] - sy[j]));
+            dis[i][j] = round(sqrt((sx[i] - sx[j]) * (sx[i] - sx[j]) + (sy[i] - sy[j]) * (sy[i] - sy[j])));
         }
     input.close();
 }
