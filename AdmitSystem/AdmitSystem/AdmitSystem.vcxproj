@@ -14,7 +14,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="Admit.h" />
     <ClInclude Include="AdmitSystem.h" />
+    <ClInclude Include="School.h" />
     <ClInclude Include="stdhead.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Volition.h" />

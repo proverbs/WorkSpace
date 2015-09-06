@@ -18,6 +18,7 @@ public:
 	string getType() const;
 	bool getStatus() const;
 	Volition& getVolition(int x);
+	void updata();
 private:    
     string name;
     string gender;
@@ -116,6 +117,26 @@ void Student::confirm() {
     if (opt == 1) status = true;
     else if (opt == 2) status = false;
     else confirm();
+}
+
+void Student::updata() {
+	cout << "Please input the new name of the student." << endl;
+	cin >> name;
+	cout << "Please input the new gender of the student." << endl;
+	cin >> gender;
+	cout << "Please input the new number of the student." << endl;
+    cin >> number;
+	cout << "Please input the new score of the student." << endl;
+	cin >> score;
+	cout << "Please input the new id of the student." << endl;
+    cin >> id;
+	cout << "Please input the new password of the student." << endl;
+	cin >> password;
+	cout << "Please input the new type of the student." << endl;
+    cin >> type;
+	cout << "Please input the new status of the student." << endl;
+    cin >> status;
+	cout << "Change successfully." << endl;
 }
 
 string Student::getNumber() const {
